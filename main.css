@@ -1,0 +1,64 @@
+body {
+  background-color: #fff8f2;
+}
+
+/* g {
+  z-index: 2;
+}
+.sunflower-head {
+  z-index: 1;
+} */
+
+.cls-1{fill:#fccf00;}.cls-2{fill:#fd5;}.cls-3{opacity:0.8;}.cls-4{fill:#f2ab0c;}.cls-5{fill:#f4940b;}.cls-6{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px;}.cls-7{fill:#cf5e1b;}
+.cls-8{fill:#668101;}.cls-9{fill:#91a15f;}
+.cls-10{fill:#668101;}
+
+.cls-11{fill:#b2bd8f;}
+
+.cls-12{fill:#849743;}
+
+svg {
+  max-width: 300px; 
+  width: 90%;
+}
+path {
+  fill: transparent;
+  cursor: pointer;
+  transition: fill 0.2s
+}
+svg:focus,
+svg:hover {
+  outline: none;
+}
+/* svg:focus path,
+svg:hover path {
+  fill: rgba(30,222,121, 0.25);
+  cursor: pointer;
+} */
+
+path:focus,
+path:hover {
+  fill: rgba(30,222,121, 0.25);
+  cursor: pointer;
+}
+
+/* animation for waving leaf */
+
+@-webkit-keyframes waving-leaf{
+  0%{-webkit-transform: rotate(5deg);}
+  50%{-webkit-transform: rotate(-2deg)}
+  100%{-webkit-transform: rotate(5deg);}
+}
+
+@keyframes waving-leaf{
+  0%{transform: rotate(5deg);}
+  50%{transform: rotate(-2deg)}
+  100%{transform: rotate(5deg);}
+}
+
+.waving-leaf {
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+  animation: waving-leaf 3.5s ease-in-out forwards infinite;
+}
